@@ -12,6 +12,9 @@
 		6A1B5514218019D900030157 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A1B5512218019D900030157 /* Main.storyboard */; };
 		6A1B5516218019D900030157 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A1B5515218019D900030157 /* Assets.xcassets */; };
 		6A1B5519218019D900030157 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A1B5517218019D900030157 /* LaunchScreen.storyboard */; };
+		6A1B55212180407800030157 /* imagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1B55202180407800030157 /* imagePickerViewController.swift */; };
+		6A1B5526218048D400030157 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1B5525218048D400030157 /* MobileCoreServices.framework */; };
+		6A76A534218192B5008E56CA /* AVCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A76A533218192B5008E56CA /* AVCaptureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,10 @@
 		6A1B5515218019D900030157 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A1B5518218019D900030157 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A1B551A218019D900030157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A1B55202180407800030157 /* imagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagePickerViewController.swift; sourceTree = "<group>"; };
+		6A1B55232180487B00030157 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		6A1B5525218048D400030157 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		6A76A533218192B5008E56CA /* AVCaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCaptureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A1B5526218048D400030157 /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +48,7 @@
 			children = (
 				6A1B550D218019D900030157 /* VideoRecordAndPlayDemo */,
 				6A1B550C218019D900030157 /* Products */,
+				6A1B55222180487B00030157 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +65,23 @@
 			children = (
 				6A1B550E218019D900030157 /* AppDelegate.swift */,
 				6A1B5510218019D900030157 /* ViewController.swift */,
+				6A76A533218192B5008E56CA /* AVCaptureViewController.swift */,
+				6A1B55202180407800030157 /* imagePickerViewController.swift */,
 				6A1B5512218019D900030157 /* Main.storyboard */,
 				6A1B5515218019D900030157 /* Assets.xcassets */,
 				6A1B5517218019D900030157 /* LaunchScreen.storyboard */,
 				6A1B551A218019D900030157 /* Info.plist */,
 			);
 			path = VideoRecordAndPlayDemo;
+			sourceTree = "<group>";
+		};
+		6A1B55222180487B00030157 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A1B5525218048D400030157 /* MobileCoreServices.framework */,
+				6A1B55232180487B00030157 /* CoreServices.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +157,8 @@
 			files = (
 				6A1B5511218019D900030157 /* ViewController.swift in Sources */,
 				6A1B550F218019D900030157 /* AppDelegate.swift in Sources */,
+				6A76A534218192B5008E56CA /* AVCaptureViewController.swift in Sources */,
+				6A1B55212180407800030157 /* imagePickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +305,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 646P9H983T;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = VideoRecordAndPlayDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +325,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 646P9H983T;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = VideoRecordAndPlayDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
